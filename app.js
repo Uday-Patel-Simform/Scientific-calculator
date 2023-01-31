@@ -144,7 +144,7 @@ buttons.forEach(button => {
             display.textContent = Math.PI*display.textContent/180;
         }
         else if (button.textContent == 'F-E') {
-            display.textContent = displayAns(parseFloat(display.textContent).toExponential());
+            display.textContent = parseFloat(display.textContent).toExponential();
         }
         else if (button.textContent == '2x') {
             display.textContent = displayAns(Math.pow(2,display.textContent));
