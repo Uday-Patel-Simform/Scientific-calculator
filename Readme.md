@@ -1,7 +1,7 @@
-## Scientific Calculator
+# Scientific Calculator
 A simple scientific calculator built using HTML, CSS, and JavaScript.
 
-# Features
+## Features
 Basic arithmetic operations (addition, subtraction, multiplication, division)<br/>
 Scientific functions (sin, cos, tan, log, power)<br/>
 Display of intermediate results<br/>
