@@ -8,3 +8,4 @@ Display of intermediate results<br/>
 Clearing of results with the C button<br/>
 switch between degrees and radians for trigonometric functions<br/>
 Memory functions(M+,M-,MS,MR,MC)<br/>
+
