@@ -130,7 +130,7 @@ buttons.forEach(button => {
             display.textContent = displayAns(Math.pow(display.textContent, 3));
         }
         else {
-            if(display.textContent == '0'){
+            if(display.textContent == '0' && button.textContent != '.'){
                 console.log(button.textContent);
                 display.textContent = button.textContent;
             }else display.textContent += button.textContent;
@@ -200,6 +200,20 @@ const countDecimal = (ans) => {
         return 0;
     }
 }
+
+document.addEventListener('keydown', function(event) {
+    var key = event.key;
+    if (!isNaN(key) || key === '+' || key === '-' || key === '*' || key === '/' || key === '.' || key === '(' || key === ')' || key === '^' || key === '|' || key === '%' ) {
+        display.textContent += key; 
+    }else if(key === "Backspace"){
+        if (display.textContent.length > 0) {
+            display.textContent = display.textContent.slice(0, -1);
+        }
+        display.textContent = display.textContent;
+    }else if (key === 'Enter') {
+        equals(display.textContent);
+    }
+});
 
 // handling "⌫" operation
 const back = (content) => {
